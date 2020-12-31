@@ -2,3 +2,5 @@ Added:
  - `type` function to get the classname of a given value.
  - `type.class` function to get the constructor (class) of
  a given value.
+ - Added a `Void` class to be used as a stand-in for
+ `undefined.constructor`.
