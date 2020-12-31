@@ -40,8 +40,8 @@ const TypedObject = globalThis.TypedObject = function TypedObject(blueprint, str
 			}
 			if(v === undefined) v = new (class undefined {})();
 			throw TypeError(
-				"type "+value.constructor.name+primitext+" does not match the required type "+
-				blueprint[key].name
+				"type "+v.constructor.name+primitext+" does not match the required type "+
+				blueprint[p].name
 			);
 		}
 
