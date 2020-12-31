@@ -1,0 +1,5 @@
+Added:
+ - `base` (pos:3) parameter for `TypedObject`.
+ - Missing `@param` doc for `isprimitive.of`.
+Fixed:
+ - Spelling errors in the doc for `TypedObject`.
