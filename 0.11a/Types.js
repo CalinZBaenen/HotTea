@@ -81,6 +81,7 @@ const isprimitive = globalThis.isprimitive = function isprimitive(v) {
 * Test if a value is the primitive version of another value.
 * @param {*} v The value to test.
 * @param {function} t The type to test for.
+* @param {boolean} strict Determines if `Object`s can be treated as primitives. When set to be true, only primitives can let the method return `true`.
 */
 isprimitive.of = function of(v, t, strict=true) {
 	if(typeof strict != "boolean") strict = true;
