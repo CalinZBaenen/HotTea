@@ -34,7 +34,8 @@ const type = globalThis.type = function type(v, cn) {
 type.class = function getClass(v) {
 	if(v === undefined) return Void;
 	if(v === null) v = new Object();
-	return v.constructor;
+	try {return v.constructor;} catch {}
+	return null;
 };
 
 
