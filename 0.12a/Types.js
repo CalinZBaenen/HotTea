@@ -48,10 +48,6 @@ type.class = function getClass(v) {
 const TypedObject = globalThis.TypedObject = function TypedObject(
 	blueprint, strict=true, base=new Object()
 ) {
-	"use strict";
-
-
-
 	if(base === null || typeof base != "object") base = new Object();
 
 
