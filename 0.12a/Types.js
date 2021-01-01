@@ -153,10 +153,7 @@ const Void = globalThis.Void = new Proxy(class Void {
 	get: function get(...args) {
 		const p = args[1];
 
-		if(
-			p === "TYPE" ||
-			(p === "prototype")
-		) return args[0];
+		if(p === "TYPE") return args[0];
 		throw ReferenceError("key '"+String(p)+"' does not exist");
 	},
 	set: function set(...args) {
